@@ -1,0 +1,20 @@
+{
+  "name": "loan-desktop-app",
+  "version": "1.0.0",
+  "description": "Electron app to handle loans",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "es6"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.4.4",
+    "webpack": "^1.13.3"
+  }
+}
