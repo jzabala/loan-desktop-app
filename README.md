@@ -1,2 +1,2 @@
 # loan-app
-App to handle loans.
+Electron app to handle loans.
