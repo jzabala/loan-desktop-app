@@ -1,0 +1,69 @@
+/*Main color of the loan app*/
+/*
+#558C89 a wierd green a little dark
+#74AFAD the same of the above color but more light
+#D9853B like orange but more dark
+#ECECEA some wierd gray light
+*/
+
+
+*{
+  margin:0px;
+  padding:0px;
+
+}
+.layout{
+  display: flex;
+  flex-direction: row;
+}
+#side-menu{  
+  width:10%;
+  min-height: 100vh;
+  background-color:#74AFAD;
+}
+.brand{
+  padding: 22%;
+  background: #D9853B;
+  margin-bottom: 10%;
+  text-align: center;
+  color:#67BCDB;
+}
+.brand h1{
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.first-word{
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+.second-word{
+  padding-top:0px;
+  margin-top:-12%;;
+}
+
+.side-menu-nav{
+  margin-left: 2%;
+}
+
+.side-menu-nav ul{
+ list-style: none;
+}
+
+.side-menu-nav ul li{
+  font-size: 180%;
+  padding: 14% 5% 14% 30%;
+}
+
+.side-menu-nav ul li:hover{
+  background-color:#558C89;
+  border:1px #558C89;
+}
+.side-menu-nav ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+#main-container{
+  width: 100%;
+  min-height: 100vh;
+  /*float: right;*/
+}
