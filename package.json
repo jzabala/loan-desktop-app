@@ -4,7 +4,8 @@
   "description": "Electron app to handle loans",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "watch": "webpack --progress --colors --watch"
   },
   "keywords": [
     "electron",
@@ -19,6 +20,7 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "electron": "^1.4.4",
+    "electron-reload": "^1.0.3",
     "webpack": "^1.13.3"
   },
   "dependencies": {

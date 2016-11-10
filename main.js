@@ -1,14 +1,27 @@
-const {app, BrowserWindow} = require('electron');
+/*This line is to reload the app when a file have changed*/
+require('electron-reload')(__dirname + "/build");
 
-let win;
+'use strict';
+const {app, BrowserWindow} = require('electron');
+const path = require('path')
+const url = require('url')
+
+let mainWindow;
 
 function createMainWindow() {
-  win = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({width: 800, height: 600});
 
-  win.loadURL(`file://${__dirname}/index.html`);
+  mainWindow.loadURL(url.format({
+    pathname: path.join(__dirname, 'index.html'),
+    protocol: 'file:',
+    slashes: true
+  }))
 
-  win.on('closed', () => {
-    win = null;
+  // Open the DevTools.
+  mainWindow.webContents.openDevTools()
+
+  mainWindow.on('closed', () => {
+    mainWindow = null;
   })
 }
 
