@@ -16,8 +16,8 @@
   display: flex;
   flex-direction: row;
 }
-#side-menu{  
-  width:10%;
+#side-menu{
+  width:15%;
   min-height: 100vh;
   background-color:#74AFAD;
 }
