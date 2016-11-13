@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router";
 
 const MainNav = () => (
   <nav>
     <ul>
-      <li><a href="#">Loans</a></li>
-      <li><a href="#">People</a></li>
+      <li><Link to="/loan-list">Loans</Link></li>
+      <li><Link to="/people-list">People</Link></li>
     </ul>
   </nav>
 );
