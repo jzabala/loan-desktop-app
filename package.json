@@ -4,7 +4,7 @@
   "description": "Electron app to handle loans",
   "main": "main.js",
   "scripts": {
-    "start": "concurrently -k \"webpack --progress --colors --watch\" \"electron .\""    
+    "start": "concurrently -k \"webpack --progress --colors --watch\" \"electron .\""
   },
   "keywords": [
     "electron",
@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-router": "^3.0.0"
   }
 }
